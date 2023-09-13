@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Editor</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <header>Easy Imaga Editor</header>
+      <aside>
+        <div class="border-box">
+          <div class="head">Filters</div>
+          <div class="fiturs">
+            <div class="btn-fiturs">
+              <button class="filter 1">Brightness</button>
+              <button class="filter 2">Saturation</button>
+              <button class="filter 3">Inversion</button>
+              <button class="filter 4">Grayscale</button>
+              <button class="filter 5">Contrast</button>
+              <button class="filter 6">Opacity</button>
+            </div>
+
+            <div class="range">
+              <span class="name-filter">Brightness</span>
+              <div class="value-input">50</div>
+              <div class="persen">%</div>
+              <input type="range" name="" id="range" min="0" max="100" />
+            </div>
+            <div class="blur">
+              <label for="blur">Blur</label>
+              <input type="number" name="blur" id="blur" />
+            </div>
+            <div class="rotate-and-flip">
+              <span>Rotate & Flip</span>
+              <div class="btn-rotate-and-flip">
+                <button>
+                  <i class="fa-solid fa-arrow-rotate-left" style="color: #404040"></i>
+                </button>
+                <button>
+                  <i class="fa-solid fa-rotate-right" style="color: #0c0d0e"></i>
+                </button>
+                <button>
+                  <i class="fa-solid fa-arrows-left-right"></i>
+                </button>
+                <button>
+                  <i class="fa-solid fa-arrows-up-down"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="reset-filter">
+          <button>RESET FILTER</button>
+        </div>
+      </aside>
+      <article>
+        <div class="space-image"><img src="" alt="" /></div>
+        <div class="btn-choose-save">
+          <label for="image" class="custom-file-label">CHOOSE IMAGE</label>
+          <input type="file" id="image" name="image" accept="image/*" required />
+          <button id="saveImage">SAVE IMAGE</button>
+        </div>
+      </article>
+    </div>
+
+    <footer>&#169;COPYRIGHT BY RIZKI TRIANANDA</footer>
+    <script src="script.js"></script>
+  </body>
+</html>
